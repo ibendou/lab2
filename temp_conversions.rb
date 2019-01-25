@@ -1,5 +1,6 @@
 def convert(temp)
     return "Temperature must be an integer" unless temp.class == Integer
+    return "Temperature below Absolute Zero" if temp < -474 
     5 * (temp - 32)/9
 end
 
